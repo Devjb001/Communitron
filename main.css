@@ -106,7 +106,11 @@ header  button:hover{
     padding: 3rem 0 0 0;
     color: #fff;
     background: -webkit-linear-gradient(162deg,#1B0D3E 0%, #3E4FB9 80%);
-   
+    background-image: url(images/hero-img/hero-bg.jpeg), linear-gradient(#3e4eb99f 0%, #3e4eb9a1 80%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
 }
 .home h1{
     font-size: 5rem;
@@ -151,6 +155,7 @@ header  button:hover{
 }
 .home img{
     width:1000px;
+    /*--this css has been display none due to change of hero img*/
 }
 .home .images{
     display: flex;
@@ -158,6 +163,8 @@ header  button:hover{
     align-items: center;
     flex-direction: column;
     margin-bottom: -6px;
+    display: none;
+    /*--this css has been display none due to change of hero img*/
 }
 
 
@@ -213,11 +220,12 @@ header  button:hover{
     height:30rem;
     border: 1px solid #E2E6E9;
     border-radius: .5rem;
+    transition: 1s all;
 }
 .resources .container .frame:hover{
     transform: scale(1.1);
     box-shadow: 0px 0px 10px rgba(173, 173, 173, 0.507);
-    transition: all 1s ease;
+    transition: all 1s ;
 }
 /*------------RESOURCES END---------------*/
 
@@ -373,6 +381,7 @@ header  button:hover{
 .blog .container .card{
     width: 35rem;
     height: auto;
+    transition: 1s all;
 }
 .blog .container .card .image{
     width: 100%;
@@ -400,7 +409,7 @@ header  button:hover{
 }
 .blog .container .card:hover{
     transform: scale(1.1);
-    transition: all 1s ease;
+    transition: 1s all;
     box-shadow: 0px 0px 10px rgba(173, 173, 173, 0.507);
     border-radius: 1rem;
 }
@@ -475,11 +484,12 @@ header  button:hover{
     border: 1px solid #E2E6E9;
     border-radius: .5rem;
     position: relative;
+    transition: 1s all;
 }
 .inpact .container .frame:hover{
     transform: scale(1.1);
     box-shadow: 0px 0px 10px rgba(173, 173, 173, 0.507);
-    transition: all 1s ease;
+    transition: 1s all;
 }
 .inpact .fa-star, .fa-star-half-stroke{
     color: gold;
