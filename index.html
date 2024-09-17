@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Communitron / CODE BY DEV.JB</title>
+    <title>Communitron BY JB</title>
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,21 +11,25 @@
 <body>
     <header>
         <h1>Communitron</h1>
-        <nav>
+        <nav class="menu">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#resources">Resources</a></li>
-                <li><a href="#community">Communities</a></li>
-                <li><a href="#people">People</a></li>
-                <li><a href="#blog">Blogs</a></li>
+                <li><a href="#home" class="nav-links">Home</a></li>
+                <li><a href="#resources" class="nav-links">Resources</a></li>
+                <li><a href="#community" class="nav-links">Communities</a></li>
+                <li><a href="#people" class="nav-links">People</a></li>
+                <li><a href="#blog" class="nav-links">Blogs</a></li>
             </ul>
         </nav>
         <div class="search">
-            <input type="search" placeholder="search" >
+            <label for=" text">
+                <input type="search" id="text"placeholder="search">
+                <img src="images/hero-img/icons8-search-30.png" alt="">
+            </label>
             <button>Sign Up</button>
         </div>
         <div class="bars">
-            <i class="fa-solid fa-bars-staggered"></i>
+            <i class="fa-solid fa-bars-staggered" id="bars"></i>
+            <i class="fa-solid fa-xmark" id="cancel"></i>
         </div>
     </header>
     <!-------------------------HOME START--------------------->
@@ -389,6 +393,6 @@
 
 
      
-    
+    <script src="app.js"></script>
 </body>
 </html>
